@@ -13,4 +13,4 @@ install:
 
 script:
     #- xcodebuild clean build -sdk iphonesimulator -project ./CIProject/CIProject.xcodeproj -scheme CIProject CODE_SIGNING_REQUIRED=NO
-    fastlane ios test
+    fastlane run_tests
