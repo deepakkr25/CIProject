@@ -9,4 +9,5 @@ notifications:
     on_failure: always # default: always
 
 script:
-    - xcodebuild clean build -sdk iphonesimulator -project ./CIProject/CIProject.xcodeproj -scheme CIProject CODE_SIGNING_REQUIRED=NO
+    #- xcodebuild clean build -sdk iphonesimulator -project ./CIProject/CIProject.xcodeproj -scheme CIProject CODE_SIGNING_REQUIRED=NO
+    fastlane test
