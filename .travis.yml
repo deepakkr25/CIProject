@@ -14,4 +14,4 @@ install:
 script:
     #- xcodebuild clean build -sdk iphonesimulator -project ./CIProject/CIProject.xcodeproj -scheme CIProject CODE_SIGNING_REQUIRED=NO
     #fastlane run_tests
-    fastlane scan --project "CIProject.xcodeproj" --scheme "CIProject" --device "iPhone 6" --clean
+    fastlane scan --project CIProject.xcodeproj --scheme CIProject --device iPhone 6 --clean
