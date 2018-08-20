@@ -17,6 +17,6 @@ addons:
       secure: 7cc9f4ec2d70c33809e51262d70c524175a41692 # encrypted value of your token
 script:
     #- xcodebuild clean build -sdk iphonesimulator -project ./CIProject/CIProject.xcodeproj -scheme CIProject CODE_SIGNING_REQUIRED=NO
-    - sonar-scanner
+    - sonar-scanner -X
     #- fastlane test
     #fastlane scan --project CIProject.xcodeproj --scheme CIProject --device iPhone 6 --clean
