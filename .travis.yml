@@ -18,5 +18,5 @@ addons:
 script:
     #- xcodebuild clean build -sdk iphonesimulator -project ./CIProject/CIProject.xcodeproj -scheme CIProject CODE_SIGNING_REQUIRED=NO
     - sonar-scanner -X
-    #- fastlane test
+    - fastlane test
     #fastlane scan --project CIProject.xcodeproj --scheme CIProject --device iPhone 6 --clean
