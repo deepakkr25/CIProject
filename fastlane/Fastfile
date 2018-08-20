@@ -32,6 +32,3 @@ platform :ios do
     )
   end
 end
-
-
-//7cc9f4ec2d70c33809e51262d70c524175a41692
