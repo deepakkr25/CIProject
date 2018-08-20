@@ -11,9 +11,7 @@
 #
 
 # Uncomment the line if you want fastlane to automatically update itself
-update_fastlane
-
-setup_travis
+# update_fastlane
 
 default_platform(:ios)
 
@@ -23,14 +21,6 @@ platform :ios do
     # add actions here: https://docs.fastlane.tools/actions
   end
 
-  lane :build do
-    gym(
-      scheme: "CIProject",
-      clean: true,
-      configuration: "Debug"
-    )
-  end
-
   desc "Runs all the tests"
   lane :test do
     scan(
@@ -38,7 +28,10 @@ platform :ios do
       scheme: 'CIProject',
       clean: true,
       configuration: 'Debug',
-      devices: ['iPhone 6', 'iPhone 7']
+      devices: ['iPhone 7']
     )
   end
 end
+
+
+//7cc9f4ec2d70c33809e51262d70c524175a41692
